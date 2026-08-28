@@ -1,11 +1,5 @@
 {
   "buildCommand": "",
   "outputDirectory": ".",
-  "cleanUrls": true,
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/port1.html"
-    }
-  ]
+  "cleanUrls": true
 }

@@ -497,6 +497,18 @@ words.forEach((word, index) => {
 
 });
 
+// Animation Observer
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+
+const hiddenElements = document.querySelectorAll('.section, .hero, .stats, .contact-section, .service-card, .project-card, .stat, .process-grid > div, .testimonial, .tech-grid div');
+hiddenElements.forEach((el) => observer.observe(el));
+
 </script>
 
 </body>

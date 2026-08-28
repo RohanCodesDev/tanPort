@@ -183,7 +183,7 @@ footer a:hover {
 
     font-weight: 900;
 
-    opacity: 0;
+    opacity: 1;
     transform: translateY(70px);
 
     animation:
@@ -220,7 +220,7 @@ footer a:hover {
     font-size: 14px;
     line-height: 1.7;
 
-    opacity: 0;
+    opacity: 1;
     animation: fadeUp 1s ease 2.5s forwards;
 }
 
@@ -245,7 +245,7 @@ footer a:hover {
     box-shadow:
         0 0 20px rgba(255, 20, 147, .2);
 
-    opacity: 0;
+    opacity: 1;
 
     animation: fadeUp 1s ease 2.8s forwards;
 
@@ -1029,7 +1029,7 @@ footer div:last-child {
 @keyframes wordAppear {
 
     0% {
-        opacity: 0;
+        opacity: 1;
         transform: translateY(100px) skewY(8deg);
         filter: blur(10px);
     }
@@ -1044,7 +1044,7 @@ footer div:last-child {
 @keyframes fadeUp {
 
     from {
-        opacity: 0;
+        opacity: 1;
         transform: translateY(30px);
     }
 
@@ -1246,7 +1246,7 @@ footer div:last-child {
 ================================= */
 
 .animate-text {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(35px);
     filter: blur(8px);
 
@@ -1269,7 +1269,7 @@ footer div:last-child {
 /* CODE / CREATE / DISRUPT */
 
 .animate-word {
-    opacity: 0;
+    opacity: 1;
     transform: translateY(80px);
     filter: blur(12px);
 
@@ -1294,7 +1294,7 @@ footer div:last-child {
 @keyframes textReveal {
 
     0% {
-        opacity: 0;
+        opacity: 1;
         transform: translateY(35px);
         filter: blur(8px);
     }
@@ -1309,7 +1309,7 @@ footer div:last-child {
 
 @keyframes wordReveal {
     0% {
-        opacity: 0;
+        opacity: 1;
         transform: translateY(80px) skewY(8deg);
         filter: blur(12px);
     }
@@ -1327,7 +1327,7 @@ footer div:last-child {
 
 /* ===== FULL SITE ANIMATION ===== */
 .section, .hero, .stats, .contact-section {
-  opacity: 0;
+  opacity: 1;
   transform: translateY(60px);
   transition: all 0.9s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -1338,7 +1338,7 @@ footer div:last-child {
 
 /* 1. HERO - KAI STERLING - CODE CREATE DISRUPT */
 .animated-words .word {
-  opacity: 0;
+  opacity: 1;
   transform: translateY(100%) rotateX(-30deg);
   display: inline-block;
   animation: wordRise 0.8s forwards;
@@ -1378,7 +1378,7 @@ footer div:last-child {
 
 /* 3. Cards stagger */
 .service-card, .project-card, .stat, .process-grid > div, .testimonial, .tech-grid div {
-  opacity: 0;
+  opacity: 1;
   transform: translateY(30px) scale(0.95);
   transition: all 0.6s ease;
 }

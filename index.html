@@ -32,9 +32,17 @@
         <a href="#contact">CONTACT</a>
     </nav>
 
-    <a href="#contact" class="connect-btn">
-        LET'S CONNECT →
-    </a>
+    <div class="nav-right">
+        <a href="#contact" class="connect-btn">
+            LET'S CONNECT →
+        </a>
+
+        <div class="menu-btn" id="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
 
 </header>
 
@@ -508,6 +516,23 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.section, .hero, .stats, .contact-section, .service-card, .project-card, .stat, .process-grid > div, .testimonial, .tech-grid div');
 hiddenElements.forEach((el) => observer.observe(el));
+
+// Mobile Menu Toggle
+const menuBtn = document.getElementById('menu-btn');
+const nav = document.querySelector('nav');
+
+menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle('active');
+    nav.classList.toggle('active');
+});
+
+// Close mobile menu on link click
+document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        menuBtn.classList.remove('active');
+        nav.classList.remove('active');
+    });
+});
 
 </script>
 
